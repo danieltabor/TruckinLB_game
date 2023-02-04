@@ -1,0 +1,138 @@
+<CoordinateSystem> { Z-up }
+
+<Comment> { "Egg laid by Chicken for Blender v1.0" }
+
+<Material> Material {
+  <Scalar> diffr {0.800000011921}
+  <Scalar> diffg {0.800000011921}
+  <Scalar> diffb {0.800000011921}
+  <Scalar> specr {0.25}
+  <Scalar> specg {0.25}
+  <Scalar> specb {0.25}
+  <Scalar> shininess {12.5}
+}
+<Texture> building.bmp {
+  "./building.bmp"
+}
+<Group> BuildingCorner {
+  <Transform> {
+    <Matrix4> {
+      1.000000 0.000000 0.000000 0.000000
+      0.000000 1.000000 0.000000 0.000000
+      0.000000 0.000000 1.000000 0.000000
+      0.000000 0.000000 1.000000 1.000000
+    }
+  }
+  <VertexPool> BuildingCorner {
+    <Vertex> 0 {
+      1.000000 0.999999 2.700000
+      <UV> { 0.395583 0.488677 }
+    }
+    <Vertex> 1 {
+      1.000000 1.000000 0.000000
+      <UV> { 0.395583 0.000000 }
+    }
+    <Vertex> 2 {
+      -1.000000 1.000000 0.000000
+      <UV> { 0.791966 0.000000 }
+    }
+    <Vertex> 3 {
+      -1.000000 1.000000 2.700000
+      <UV> { 0.791966 0.488677 }
+    }
+    <Vertex> 4 {
+      1.000000 0.999999 2.700000
+      <UV> { 0.396409 1.000000 }
+    }
+    <Vertex> 5 {
+      -1.000000 1.000000 2.700000
+      <UV> { 0.000000 0.999156 }
+    }
+    <Vertex> 6 {
+      -1.000000 1.200000 2.790000
+      <UV> { 0.001157 0.950822 }
+    }
+    <Vertex> 7 {
+      1.000001 1.199999 2.790000
+      <UV> { 0.396800 0.954863 }
+    }
+    <Vertex> 8 {
+      1.000001 1.199999 2.790000
+      <UV> { 0.396800 0.954863 }
+    }
+    <Vertex> 9 {
+      -1.000000 1.200000 2.790000
+      <UV> { 0.001157 0.950822 }
+    }
+    <Vertex> 10 {
+      -1.000000 1.200000 2.910000
+      <UV> { 0.005286 0.898193 }
+    }
+    <Vertex> 11 {
+      1.000001 1.199999 2.910000
+      <UV> { 0.391554 0.908483 }
+    }
+    <Vertex> 12 {
+      1.000001 1.199999 2.910000
+      <UV> { 0.391554 0.908483 }
+    }
+    <Vertex> 13 {
+      -1.000000 1.200000 2.910000
+      <UV> { 0.005286 0.898193 }
+    }
+    <Vertex> 14 {
+      -1.000000 1.000000 3.000000
+      <UV> { 0.004340 0.850661 }
+    }
+    <Vertex> 15 {
+      1.000000 0.999999 3.000000
+      <UV> { 0.388199 0.850661 }
+    }
+    <Vertex> 16 {
+      1.000000 0.999999 3.000000
+      <UV> { 0.388199 0.850661 }
+    }
+    <Vertex> 17 {
+      -1.000000 1.000000 3.000000
+      <UV> { 0.004340 0.850661 }
+    }
+    <Vertex> 18 {
+      -1.000000 -1.000000 3.000000
+      <UV> { 0.004340 0.488678 }
+    }
+    <Vertex> 19 {
+      0.999999 -1.000001 3.000000
+      <UV> { 0.393674 0.488678 }
+    }
+  }
+  <Polygon> {
+    <TRef> { building.bmp }
+    <MRef> { Material }
+    <Normal> { 0.000000 1.000000 0.000000 }
+    <VertexRef> { 0 1 2 3 <Ref> { BuildingCorner } }
+  }
+  <Polygon> {
+    <TRef> { building.bmp }
+    <MRef> { Material }
+    <Normal> { 0.000000 0.410364 -0.911922 }
+    <VertexRef> { 4 5 6 7 <Ref> { BuildingCorner } }
+  }
+  <Polygon> {
+    <TRef> { building.bmp }
+    <MRef> { Material }
+    <Normal> { 0.000000 1.000000 0.000000 }
+    <VertexRef> { 8 9 10 11 <Ref> { BuildingCorner } }
+  }
+  <Polygon> {
+    <TRef> { building.bmp }
+    <MRef> { Material }
+    <Normal> { 0.000000 0.410364 0.911922 }
+    <VertexRef> { 12 13 14 15 <Ref> { BuildingCorner } }
+  }
+  <Polygon> {
+    <TRef> { building.bmp }
+    <MRef> { Material }
+    <Normal> { 0.000000 0.000000 1.000000 }
+    <VertexRef> { 16 17 18 19 <Ref> { BuildingCorner } }
+  }
+}

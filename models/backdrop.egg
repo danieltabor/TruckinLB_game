@@ -1,0 +1,42 @@
+<CoordinateSystem> { Z-up }
+
+<Comment> { "Egg laid by Chicken for Blender v1.0" }
+
+<Material> Material {
+  <Scalar> diffr {0.800000011921}
+  <Scalar> diffg {0.800000011921}
+  <Scalar> diffb {0.800000011921}
+  <Scalar> specr {0.25}
+  <Scalar> specg {0.25}
+  <Scalar> specb {0.25}
+  <Scalar> shininess {12.5}
+}
+<Texture> loading.png {
+  "./backdrop.bmp"
+}
+<Group> Backdrop {
+  <VertexPool> Backdrop {
+    <Vertex> 0 {
+      1.000000 0.999999 0.000000
+      <UV> { 0 1 }
+    }
+    <Vertex> 1 {
+      -1.000000 1.000000 0.000000
+      <UV> { 0 1 }
+    }
+    <Vertex> 2 {
+      -1.000000 -1.000000 0.000000
+      <UV> { 0 1 }
+    }
+    <Vertex> 3 {
+      0.999999 -1.000001 0.000000
+      <UV> { 0 1 }
+    }
+  }
+  <Polygon> {
+    <TRef> { loading.png }
+    <MRef> { Material }
+    <Normal> { 0.000000 0.000000 1.000000 }
+    <VertexRef> { 0 1 2 3 <Ref> { Backdrop } }
+  }
+}
